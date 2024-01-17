@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Membuat Website Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="home">
+          <input type="text" id="display" readonly />
+          <div class="buttons">
+            <div>
+              <button class="button operator" onclick="hapusSemua('C')">
+                C
+              </button>
+              <button class="button operator" onclick="hapus('DE')">DE</button>
+              <button class="button operator" onclick="tombol('/')">/</button>
+              <button class="button operator" onclick="tombol('.')">.</button>
+            </div>
+            <div>
+              <button class="button" onclick="tombol('7')">7</button>
+              <button class="button" onclick="tombol('8')">8</button>
+              <button class="button" onclick="tombol('9')">9</button>
+              <button class="button operator" onclick="tombol('*')">*</button>
+            </div>
+            <div>
+              <button class="button" onclick="tombol('4')">4</button>
+              <button class="button" onclick="tombol('5')">5</button>
+              <button class="button" onclick="tombol('6')">6</button>
+              <button class="button operator" onclick="tombol('+')">+</button>
+            </div>
+            <div>
+              <button class="button" onclick="tombol('1')">1</button>
+              <button class="button" onclick="tombol('2')">2</button>
+              <button class="button" onclick="tombol('3')">3</button>
+              <button class="button operator" onclick="tombol('-')">-</button>
+            </div>
+            <div>
+              <button class="button" onclick="tombol('0')">0</button>
+              <button class="button" onclick="tombol('00')">00</button>
+              <button class="button" onclick="tombol('000')">000</button>
+              <button class="button operator" onclick="hasil('=')">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
